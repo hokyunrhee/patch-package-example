@@ -1,0 +1,13 @@
+diff --git a/node_modules/rc-slider/lib/Range.d.ts b/node_modules/rc-slider/lib/Range.d.ts
+index 225634f..e85f262 100644
+--- a/node_modules/rc-slider/lib/Range.d.ts
++++ b/node_modules/rc-slider/lib/Range.d.ts
+@@ -8,7 +8,7 @@ export interface RangeProps extends GenericSliderProps {
+     min?: number;
+     max?: number;
+     allowCross?: boolean;
+-    pushable?: boolean;
++    pushable?: boolean | number;
+     onChange?: (value: number[]) => void;
+     onBeforeChange?: (value: number[]) => void;
+     onAfterChange?: (value: number[]) => void;
